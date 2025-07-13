@@ -25,6 +25,6 @@ document.addEventListener('DOMContentLoaded', function() {
     dots[slideIndex - 1].classList.add("active");
 
     // loop
-    setTimeout(showSlides, 2000);
+    setTimeout(showSlides, 4000);
   }
 });
