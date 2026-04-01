@@ -100,7 +100,7 @@
             <span class="author-block">
               <a href="https://oluwaseyiwater.github.io">Oluwaseyi Giwa</a><sup>1</sup>,</span>
             <span class="author-block">
-              <a href="#">Tobi Awodunmila</a><sup>1</sup>,</span>
+              <a href="#">Tobi Ebenezer Awodumila</a><sup>1</sup>,</span>
             <span class="author-block">
               <a href="https://ahmd-mohsin.github.io">Muhammad Ahmed Mohsin</a><sup>2</sup>,</span>
             <span class="author-block">
@@ -123,7 +123,7 @@
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="#"
+                <a href="https://ieeexplore.ieee.org/abstract/document/11414128"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -190,27 +190,19 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
-          <p>
-            The dynamic spectrum allocation in 5G / 6G networks is critical to efficient resource utilization. 
-            However, applying traditional deep reinforcement learning (DRL) is often infeasible due to its immense sample complexity and the safety 
-            risks associated with unguided exploration, which can cause severe network interference.
-          </p>
-          <p>
-          To address these challenges, we propose a meta-learning framework that enables agents to learn
-           a robust initial policy and rapidly adapt to new wireless scenarios with minimal data.
-            We implement three meta-learning architectures&mdash; model-agnostic meta-learning (MAML), 
-            recurrent neural network (RNN), and an attention-enhanced RNN&mdash; and evaluate them 
-            against a non-meta-learning DRL algorithm, proximal policy optimization (PPO) baseline,
-             in a simulated dynamic integrated access/backhaul (IAB) environment. Our results show a
-              clear performance gap. The attention-based meta-learning agent reaches a peak mean 
-              network throughput of
-           \(\approx 48\) Mbps, while the PPO baseline decreased drastically to \(10\) Mbps.
-          </p>
-          <p>
-            Furthermore, our method reduces SINR and latency violations by more than \(50\%\) compared to PPO.
-             It also shows quick adaptation, with a fairness index \(\geq 0.7\), showing better resource
-              allocation. This work proves that meta-learning is a very effective and safer 
-            option for intelligent control in complex wireless systems.
+          Efficient spectrum allocation is vital for 5G/6G networks, yet traditional 
+          deep reinforcement learning (DRL) methods suffer from high sample complexity and 
+          unsafe exploration that can disrupt network stability. To address these challenges, 
+          we propose a meta-learning framework that learns a robust initial policy capable of rapid 
+          and safe adaptation to changing wireless conditions. We implement three meta-learning 
+          architectures using model-agnostic techniques---model-agnostic meta-learning (MAML),
+           recurrent neural network (RNN), and RNN with a self-attention mechanism---and 
+           compare them against a DRL baseline and classical heuristic approaches in a dynamic 
+           integrated access/backhaul (IAB) environment. The attention-based agent achieves a peak
+            throughput of \(\approx49\)~Mbps, reducing SINR and latency violations by over \(60\%\)
+             relative to PPO, and attains \(97\%\) of the fairness level of the exhaustive-search 
+             upper bound. These results demonstrate that meta-learning enables data-efficient, reliable, 
+          and scalable spectrum management for next-generation wireless systems.
           </p>
         </div>
       </div>
@@ -231,32 +223,26 @@
       <h2 class="title is-3">Results</h2>
 
       <div class="mySlides fade">
-        <div class="numbertext">1 / 5</div>
-        <img src="./static/images/combined_fairness.jpg">
+        <div class="numbertext">1 / 4</div>
+        <img src="./static/images/fairness_result.png">
         <div class="text">Fairness Index.</div>
       </div>
 
       <div class="mySlides fade">
-        <div class="numbertext">2 / 5</div>
-        <img src="./static/images/combined_latency.jpg">
+        <div class="numbertext">2 / 4</div>
+        <img src="./static/images/latency_result.png">
         <div class="text">Mean Latency Violations.</div>
       </div>
 
       <div class="mySlides fade">
-        <div class="numbertext">3 / 5</div>
-        <img src="./static/images/combined_rewards.jpg">
-        <div class="text">Mean Episodic Reward.</div>
-      </div>
-
-      <div class="mySlides fade">
-        <div class="numbertext">4 / 5</div>
-        <img src="./static/images/combined_sinr.jpg">
+        <div class="numbertext">3 / 4</div>
+        <img src="./static/images/sinr_result.png">
         <div class="text">Mean SINR Violations.</div>
       </div>
 
       <div class="mySlides fade">
-        <div class="numbertext">5 / 5</div>
-        <img src="./static/images/combined_throughput.jpg">
+        <div class="numbertext">4 / 4</div>
+        <img src="./static/images/throughput_result.png">
         <div class="text">Network Throughput.</div>
       </div>
 
@@ -264,7 +250,6 @@
     <br>
 
     <div style="text-align: center">
-      <span class="dot"></span>
       <span class="dot"></span>
       <span class="dot"></span>
       <span class="dot"></span>
@@ -306,10 +291,10 @@
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
     <pre><code>@article{oluwaseyi2025,
-  author    = {Oluwaseyi, Giwa and Tobi, Awodunmila and Muhammad, Ahmed Mohsin and Ahsan, Bilal and Muhammad, Ali Jamshed},
+  author    = {Oluwaseyi, Giwa and Tobi, Ebenezer Awodumila and Muhammad, Ahmed Mohsin and Ahsan, Bilal and Muhammad, Ali Jamshed},
   title     = {Meta-Reinforcement Learning for Fast and Data-Efficient Spectrum Allocation in Dynamic Wireless Networks},
   journal   = {IEEE Wireless Communications Letters},
-  year      = {2025}
+  year      = {2026}
 }</code></pre>
   </div>
 </section>
